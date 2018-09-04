@@ -5,7 +5,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link type="text/css" rel="stylesheet" href="css/default.css" />
-    <title>チャットサンプル</title>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Akari</title>
+
+    <!--JavaScript at end of body for optimized loading-->
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script type="text/javascript" src="js/jquery331.js"></script>
 
     <!-- Start of Async Drift Code -->
     <script>
@@ -44,57 +55,7 @@
 </head>
 
 <body>
-    <h3 id="me" user_id="1">あなたはユーザー1です</h3>
-    <h3 id="partner" thread_id="1">相手</h3>
-    <div id="users">
-        <button class="user" user_id="2">ユーザー2</button>
-    </div>
-    <br>
-    <div id="your_container">
-        <!-- チャットの外側部分① -->
-        <div id="bms_messages_container">
-            <!-- ヘッダー部分② -->
-            <div id="bms_chat_header">
-                <!--ステータス-->
-                <div id="bms_chat_user_status">
-                    <!--ステータスアイコン-->
-                    <div id="bms_status_icon">●</div>
-                    <!--ユーザー名-->
-                    <div id="bms_chat_user_name">ユーザー</div>
-                </div>
-            </div>
 
-            <!-- タイムライン部分③ -->
-            <div id="bms_messages">
-
-                <!--メッセージ１（左側）-->
-                <div class="bms_message bms_left">
-                    <div class="bms_message_box">
-                        <div class="bms_message_content">
-                            <div class="bms_message_text">ほうほうこりゃー便利じゃないか</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="bms_clear"></div><!-- 回り込みを解除（スタイルはcssで充てる） -->
-
-                <!--メッセージ２（右側）-->
-                <div class="bms_message bms_right">
-                    <div class="bms_message_box">
-                        <div class="bms_message_content">
-                            <div class="bms_message_text">うん、まあまあいけとるな</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="bms_clear"></div><!-- 回り込みを解除（スタイルはcssで充てる） -->
-            </div>
-
-            <!-- テキストボックス、送信ボタン④ -->
-            <div id="bms_send">
-                <textarea id="bms_send_message"></textarea>
-                <div id="bms_send_btn">送信</div>
-            </div>
-        </div>
-    </div>
 </body>
 
 </html>
